@@ -60,7 +60,6 @@ body>span{
 	max-width:2rem;
 	background: transparent;
 	font-weight: bold;
-	overflow: hidden;
 }
 
 #word {
@@ -96,7 +95,6 @@ body>span{
 	font-weight: bold;
 	text-align: center;
 	height:.45rem;
-	overflow: hidden;
 }
 
 #share {
@@ -126,7 +124,7 @@ body>span{
 	left:-.4rem;
 	position: absolute;
 	animation: zhuan 2s infinite linear;
-	-wenkit-animation: zhuan 2s infinite linear;
+	-webkit-animation: zhuan 2s infinite linear;
 	transform-origin: center;
 	-webkit-transform-origin: center;
 }

@@ -161,6 +161,10 @@ $.ajax({
             signature: data.signature,
             jsApiList: [
                 'onMenuShareAppMessage',
+                'onMenuShareTimeline',
+                'onMenuShareQQ',
+                'onMenuShareWeibo',
+                'onMenuShareQZone',
             ]
         });
         wx.ready(function (){
