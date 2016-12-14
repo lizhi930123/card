@@ -6,7 +6,7 @@ if ('addEventListener' in document) {
 }
 var url = 'http://www.mrpyq.com';
 var title = '圣诞礼物到了';
-var content = '袜子准备好装礼物了吗？';
+var content = '准备好袜子装礼物了吗？';
 var logo = 'http://mrwechat.qiniudn.com/activity/holiday_wishes_share_201612.png';
 var pay_id = pay_id;
 var phone = phone;
