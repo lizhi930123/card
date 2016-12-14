@@ -21,7 +21,7 @@ $(document).ready(function(){
 	f=url.split('?')[1].split('&')[1].split('=')[1],
 	i=url.split('?')[1].split('&')[2].split('=')[1]-0;
 	$('#to').html(t);
-	$('title').html(f+'的圣诞祝福');
+	$('title').html('给'+t+'的圣诞祝福');
 	$('#from').html(f);
 	$('#word div').html(wish[i]);
 })
