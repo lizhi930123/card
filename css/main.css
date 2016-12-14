@@ -88,13 +88,12 @@ body>span{
 	left:3.3rem;
 	border:none;
 	top:8.25rem;
-	text-align:left;
 	font-size:.45rem;
 	color:#ff3030;
 	background: transparent;
 	font-weight: bold;
 	text-align: center;
-	line-height:1;
+	line-height:1.2;
 }
 
 #share {
