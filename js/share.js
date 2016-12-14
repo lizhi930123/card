@@ -7,7 +7,7 @@ $(document).ready(function(){
 	$('#share').on('click',function(){
 		$('#main').css('display','none')
 	})
-	var url=unescape(window.location.href);
+	var url=decodeURI(window.location.href);
 	var wish=[
 	'如果你今天没有收到我送的圣诞礼物，那一定是因为——你的袜子有个大洞，快补补吧。',
 	'在这一年一次的圣诞节，请上帝给我勇气和力量吧，我一定要对你说出那3字：快还钱!',

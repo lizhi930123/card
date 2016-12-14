@@ -94,7 +94,7 @@ body>span{
 	background: transparent;
 	font-weight: bold;
 	text-align: center;
-	height:.45rem;
+	line-height:1;
 }
 
 #share {

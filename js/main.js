@@ -23,7 +23,7 @@ var i=Math.floor(Math.random()*7);
 $('#word div').html(wish[i]);
 var t='',f='';
 $('#to').on('input',function(){
-  t=escape($('#to').val());
+  t=encodeURI($('#to').val());
   wx.onMenuShareAppMessage({//分享给朋友
       title: title, // 分享标题
       link: 'http://www.mrpyq.com/holiday_wishes_201612/share.html?to='+t+'&f='+f+'&i='+i, // 分享链接
@@ -85,7 +85,7 @@ $('#to').on('input',function(){
   });
 })
 $('#from').on('input',function(){
-  f=escape($('#from').val());
+  f=encodeURI($('#from').val());
   wx.onMenuShareAppMessage({//分享给朋友
       title: title, // 分享标题
       link: 'http://www.mrpyq.com/holiday_wishes_201612/share.html?to='+t+'&f='+f+'&i='+i, // 分享链接
