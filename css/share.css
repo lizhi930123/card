@@ -28,6 +28,16 @@ a {
 	text-decoration: none;
 	color: ;
 }
+body>span{
+	display: none;
+}
+#text_con{
+	display: block;
+	width: 100%;
+}
+#cnzz_stat_icon_1259421891{
+	display:none;
+}
 #main {
 	width: 100%;
 	height:100%;
