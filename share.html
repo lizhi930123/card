@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/share.css">
+</head>
+
+<body>
+	<video src="http://mrwechat.qiniudn.com/video/2016_Xmas_1208_Master_Final.mp4" controls="controls" width="100%" poster="img/one.png"></video>
+	<div id="main">
+		<div id="to"></div>
+		<div id="word"><div></div></div>
+		<div id="from"></div>
+		<div id="share">
+			<div>
+				<img src="./img/snow.png" alt="">
+				<span>
+					拆开礼物
+				</span>
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+(function (doc, win) {
+	var docEl = doc.documentElement,
+	resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+	recalc = function () {
+		var clientWidth = docEl.clientWidth;
+		if (!clientWidth) return;
+		docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+	};
+	if (!doc.addEventListener) return;
+	win.addEventListener(resizeEvt, recalc, false);
+	doc.addEventListener('DOMContentLoaded', recalc, false);
+})(document, window);
+</script>
+<script src="js/jquery.min.js"></script>
+<script src="js/fastclick.js"></script>
+<script src="js/share.js"></script>
+</html>
