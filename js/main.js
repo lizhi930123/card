@@ -5,7 +5,7 @@ if ('addEventListener' in document) {
     }, false);  
 }
 var url = 'http://www.mrpyq.com';
-var title = '圣诞礼物到了';
+var title = '给你的圣诞礼物';
 var content = '准备好袜子装礼物了吗？';
 var logo = 'http://mrwechat.qiniudn.com/activity/holiday_wishes_share_201612.png';
 var pay_id = pay_id;
@@ -86,6 +86,7 @@ $('#to').on('input',function(){
 })
 $('#from').on('input',function(){
   f=encodeURI($('#from').val());
+  title=$('#from').val()+'的圣诞视频';
   wx.onMenuShareAppMessage({//分享给朋友
       title: title, // 分享标题
       link: 'http://www.mrpyq.com/holiday_wishes_201612/share.html?to='+t+'&f='+f+'&i='+i, // 分享链接
