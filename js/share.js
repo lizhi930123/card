@@ -5,7 +5,8 @@ $(document).ready(function(){
 	    }, false);  
 	} 
 	$('#share').on('click',function(){
-		$('#main').css('display','none')
+		window.location.href='http://mp.weixin.qq.com/s?__biz=MzAxMjQwMTA3OA==&mid=504399505&idx=1&sn=35bdcebe87d472483ed5d67e8c082c73&chksm=005646483721cf5e72b496d9106a61790b3200b8f11bd6138ceddc1ba8c23490ea2b2aad9036&scene=0#rd ';
+		// $('#main').css('display','none')
 	})
 	var url=decodeURI(window.location.href);
 	var wish=[
@@ -21,7 +22,7 @@ $(document).ready(function(){
 	f=url.split('?')[1].split('&')[1].split('=')[1],
 	i=url.split('?')[1].split('&')[2].split('=')[1]-0;
 	$('#to').html(t);
-	$('title').html('给'+t+'的圣诞祝福');
+	$('title').html('筒子，片儿到了啊？');
 	$('#from').html(f);
 	$('#word div').html(wish[i]);
 })

@@ -86,7 +86,7 @@ $('#to').on('input',function(){
 })
 $('#from').on('input',function(){
   f=encodeURI($('#from').val());
-  title='来自'+$('#from').val()+'的圣诞视频';
+  title='来自'+$('#from').val()+'的圣诞视频祝福';
   wx.onMenuShareAppMessage({//分享给朋友
       title: title, // 分享标题
       link: 'http://www.mrpyq.com/holiday_wishes_201612/share.html?to='+t+'&f='+f+'&i='+i, // 分享链接

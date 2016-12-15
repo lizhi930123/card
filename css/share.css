@@ -49,11 +49,6 @@ body>span{
 	background-size:100%;
 	background-repeat: no-repeat;
 }
-vedio{
-	position: absolute;
-	top:0;
-	border:1px solid #f1f1f1;
-}
 #to {
 	display: table;
 	margin:0 auto;
