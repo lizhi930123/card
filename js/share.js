@@ -5,6 +5,7 @@ $(document).ready(function(){
 	    }, false);  
 	} 
 	$('#share').on('click',function(){
+		_czc.push(["_trackEvent",'贺卡','拆开分享']);
 		window.location.href='http://mp.weixin.qq.com/s?__biz=MzAxMjQwMTA3OA==&mid=504399505&idx=1&sn=35bdcebe87d472483ed5d67e8c082c73&chksm=005646483721cf5e72b496d9106a61790b3200b8f11bd6138ceddc1ba8c23490ea2b2aad9036&scene=0#rd ';
 		// $('#main').css('display','none')
 	})

@@ -21,8 +21,23 @@ var wish=[
 ]
 var i=Math.floor(Math.random()*7);
 $('#word div').html(wish[i]);
-var t='',f='';
-$('#to').on('input',function(){
+var t=encodeURI($('#to').val()),f=encodeURI($('#from').val());
+var useragent = navigator.userAgent;
+if (useragent.match(/MicroMessenger/i) != 'MicroMessenger'){
+    $('#to').removeAttr('disabled');
+    $('#from').removeAttr('disabled');
+    $('#share_to').html('生成贺卡');
+    $('#share_to').on('click',function(){
+      window.location.href='http://www.mrpyq.com/holiday_wishes_201612/share.html?to='+t+'&f='+f+'&i='+i;
+    })
+    $('#to').on('input',function(){
+      t=encodeURI($('#to').val());
+    })
+    $('#from').on('input',function(){
+      f=encodeURI($('#from').val());
+    })
+}else{
+    $('#to').on('input',function(){
   t=encodeURI($('#to').val());
   title=$('#to').val()+',祝你圣诞快乐！';
   wx.onMenuShareAppMessage({//分享给朋友
@@ -31,7 +46,6 @@ $('#to').on('input',function(){
       imgUrl: logo, // 分享图标
       desc: content,
       success: function () {
-        _czc.push(["_trackEvent",'贺卡','分享']);
       },
       cancel: function () {
           // 用户取消分享后执行的回调函数
@@ -42,7 +56,6 @@ $('#to').on('input',function(){
       link: 'http://www.mrpyq.com/holiday_wishes_201612/share.html?to='+t+'&f='+f+'&i='+i, // 分享链接
       imgUrl: logo, // 分享图标
       success: function () { 
-         _czc.push(["_trackEvent",'贺卡','分享']);
       },
       cancel: function () { 
           // 用户取消分享后执行的回调函数
@@ -54,7 +67,6 @@ $('#to').on('input',function(){
       link: 'http://www.mrpyq.com/holiday_wishes_201612/share.html?to='+t+'&f='+f+'&i='+i, // 分享链接
       imgUrl: logo, // 分享图标
       success: function () { 
-         _czc.push(["_trackEvent",'贺卡','分享']);
       },
       cancel: function () { 
          // 用户取消分享后执行的回调函数
@@ -66,7 +78,6 @@ $('#to').on('input',function(){
       link: 'http://www.mrpyq.com/holiday_wishes_201612/share.html?to='+t+'&f='+f+'&i='+i, // 分享链接
       imgUrl: logo, // 分享图标
       success: function () { 
-         _czc.push(["_trackEvent",'贺卡','分享']);
       },
       cancel: function () { 
          // 用户取消分享后执行的回调函数
@@ -78,7 +89,6 @@ $('#to').on('input',function(){
       link: 'http://www.mrpyq.com/holiday_wishes_201612/share.html?to='+t+'&f='+f+'&i='+i, // 分享链接
       imgUrl: logo, // 分享图标
       success: function () { 
-         _czc.push(["_trackEvent",'贺卡','分享']);
       },
       cancel: function () { 
          // 用户取消分享后执行的回调函数
@@ -94,7 +104,6 @@ $('#from').on('input',function(){
       imgUrl: logo, // 分享图标
       desc: content,
       success: function () {
-        _czc.push(["_trackEvent",'贺卡','分享']);
       },
       cancel: function () {
           // 用户取消分享后执行的回调函数
@@ -105,7 +114,6 @@ $('#from').on('input',function(){
       link: 'http://www.mrpyq.com/holiday_wishes_201612/share.html?to='+t+'&f='+f+'&i='+i, // 分享链接
       imgUrl: logo, // 分享图标
       success: function () { 
-         _czc.push(["_trackEvent",'贺卡','分享']);
       },
       cancel: function () { 
           // 用户取消分享后执行的回调函数
@@ -117,7 +125,6 @@ $('#from').on('input',function(){
       link: 'http://www.mrpyq.com/holiday_wishes_201612/share.html?to='+t+'&f='+f+'&i='+i, // 分享链接
       imgUrl: logo, // 分享图标
       success: function () { 
-         _czc.push(["_trackEvent",'贺卡','分享']);
       },
       cancel: function () { 
          // 用户取消分享后执行的回调函数
@@ -129,7 +136,6 @@ $('#from').on('input',function(){
       link: 'http://www.mrpyq.com/holiday_wishes_201612/share.html?to='+t+'&f='+f+'&i='+i, // 分享链接
       imgUrl: logo, // 分享图标
       success: function () { 
-         _czc.push(["_trackEvent",'贺卡','分享']);
       },
       cancel: function () { 
          // 用户取消分享后执行的回调函数
@@ -141,7 +147,6 @@ $('#from').on('input',function(){
       link: 'http://www.mrpyq.com/holiday_wishes_201612/share.html?to='+t+'&f='+f+'&i='+i, // 分享链接
       imgUrl: logo, // 分享图标
       success: function () { 
-         _czc.push(["_trackEvent",'贺卡','分享']);
       },
       cancel: function () { 
          // 用户取消分享后执行的回调函数
@@ -238,4 +243,6 @@ $.ajax({
       }
     },
   })
+}
 })
+

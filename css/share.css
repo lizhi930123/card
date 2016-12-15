@@ -49,6 +49,9 @@ body>span{
 	background-size:100%;
 	background-repeat: no-repeat;
 }
+#logo{
+	display: none;
+}
 #to {
 	display: table;
 	margin:0 auto;
