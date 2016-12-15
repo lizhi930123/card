@@ -64,7 +64,7 @@ body>span{
 
 #word {
 	width:2.8rem;
-	height:3.2rem;
+	height:3.7rem;
 	overflow: auto;
 	position: absolute;
 	top:4.4rem;
@@ -74,7 +74,7 @@ body>span{
 }
 #word>div{
 	font-size:.3rem;
-	line-height:.7rem;
+	line-height:.5rem;
 	color:#ff3030;
 	display: table;
 	width:100%;
