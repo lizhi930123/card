@@ -22,7 +22,7 @@ $(document).ready(function(){
 	f=url.split('?')[1].split('&')[1].split('=')[1],
 	i=url.split('?')[1].split('&')[2].split('=')[1]-0;
 	$('#to').html(t);
-	$('title').html('给'+t+'的圣诞礼物');
+	$('title').html(t+',祝你圣诞快乐！');
 	$('#from').html(f);
 	$('#word div').html(wish[i]);
 })
