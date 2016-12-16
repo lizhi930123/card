@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	_czc.push(["_trackEvent",'已分享页面','打开次数']);
 	if ('addEventListener' in document) {  
 	    document.addEventListener('DOMContentLoaded', function() {  
 	        FastClick.attach(document.body);  
@@ -6,7 +7,7 @@ $(document).ready(function(){
 	} 
 	$('#share').on('click',function(){
 		_czc.push(["_trackEvent",'贺卡','拆开分享']);
-		window.location.href='http://mp.weixin.qq.com/s?__biz=MzAxMjQwMTA3OA==&mid=504399505&idx=1&sn=35bdcebe87d472483ed5d67e8c082c73&chksm=005646483721cf5e126200d8c593a33ff01cdf42bea57de49754b8ada8c23490ea2b2aad9036&scene=0#rd';
+		window.location.href='http://mp.weixin.qq.com/s/Qf5IQHkurDxJz7STowWd2A';
 		// $('#main').css('display','none')
 	})
 	var url=decodeURI(window.location.href);

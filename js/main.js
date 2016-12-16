@@ -1,4 +1,5 @@
 $(document).ready(function(){
+_czc.push(["_trackEvent",'生成贺卡','打开次数']);
 if ('addEventListener' in document) {  
     document.addEventListener('DOMContentLoaded', function() {  
         FastClick.attach(document.body);  
